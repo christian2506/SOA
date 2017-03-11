@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 20%;
+    float: left;
+    position: fixed;
+    height: 100%;
+    background: #252830;
+}
+    .logo figure img{
+        max-width: 100%;
+    }
+    #user-log h1{
+	font-size: 18px;
+	color:#9e9c9c;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+    }
+        #user-log h1 span{
+            color:#fcfcfc;
+            font-size: 16px;
+        }
+    .menu-nav li a{
+	color:#fff;
+	padding: 10px;
+	display: block;
+    }
+	.menu-nav li a:hover{
+            background: #434857;
+            transition: all .3s;
+	}
+    .dropdown{
+	cursor: pointer;
+	word-wrap: break-word;
+	line-height: 1em;
+	white-space: normal;
+	outline: 0;
+	-webkit-transform: rotateZ(0);
+	transform: rotateZ(0);
+	width: 100%;
+	background: #FFF;
+	display: inline-block;
+	padding: .78571429em 2.1em .78571429em 1em;
+	color: rgba(0,0,0,.87);
+	box-shadow: none;
+	border: 1px solid rgba(34,36,38,.15);
+	border-radius: .28571429rem;
+	-webkit-transition: box-shadow .1s ease,width .1s ease;
+	transition: box-shadow .1s ease,width .1s ease;
+    }
+main{
+    width: 80%;
+    float: right;
+    padding: 20px;
+}
+    .options{
+	float: right;
+	margin: 15px 0;
+    }
+	.options ul li{
+            list-style: none;
+            display: inline-block;
+            border:solid 1px #ebebec;
+	}
+        .options ul li:hover{
+            background: rgba(0,0,0,.03);
+	}
+	.options ul li a i{
+            margin: 7px;
+            color: #333333;
+	}
+
+/* LOGIN */
+.login{
+    background: #252830;
+}
+.center-login{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -123px !important;
+    margin-left: -150px !important;
+    text-align: center;
+}
+
+/* REGISTER CLIENT, REGISTER ACTIVITY  */
+
+#register-client, #register-activity{
+    display: none;
+    position: fixed;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    background-color: #f9fafb;
+    z-index: 1002;
+    padding: 20px;
+}
+    #register-client{
+        height: 660px;
+        margin-top: -330px;
+    }
+    #register-activity{
+        height: 380px;
+        margin-top: -160px;
+    }
+
+
+.fondo{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+}
